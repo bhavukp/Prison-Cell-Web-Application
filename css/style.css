@@ -1,0 +1,199 @@
+/*========global========*/
+.container{
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+/*=======header=======*/
+header{
+	background:#228b22;
+	color: white;
+	padding-top:30px;
+	min-height: 70px;
+	border-bottom: 3px solid #6699cc;
+}
+
+header a{
+	color: white;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+header ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1{
+	margin: 0px;
+}
+
+header nav{
+	margin-top: 10px;
+	float: right;
+}
+
+header .highlight,header .current a{
+	color:#6699cc;
+	font-weight: bold;
+}
+
+header a:hover{
+	color:#cccccc;
+}
+
+/*==========Showcase=========*/
+
+#showcase{
+	height:410px;
+	background: url(../media/prison.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 -300px;
+	text-align: center;
+	color: white;
+	background-size: cover;
+}
+
+#showcase h3{
+	margin-top: 100px;
+	font-size:40px;
+	margin-bottom: 10px
+}
+
+#showcase p{
+	font-size: 30px;
+	margin-top: 60px;
+}
+
+/*======footer======*/
+
+footer{
+	padding:25px;
+	border-top: 3px solid #228b22;
+	color:white;
+	background-color: #6699cc;
+	text-align: center;
+	font-weight: bold;
+	font-size:large;
+}
+
+/*=====media queries=====*/
+
+@media(max-width:900px){
+
+	header #branding, header nav,header nav li{
+		float: none;
+		text-align:center;
+		width:100%;
+	}
+
+	header nav, header li{
+		padding: 5px;
+		padding-bottom: 20px;
+	}
+
+	header h1{
+		font-size:25px;
+	}
+
+	#showcase{
+		height:600px;
+		background-position: 100% 100%;
+	}
+
+	#showcase h1{
+		font-size:30px;
+	}
+}
+
+/*=========ADMIN PAGE=======*/
+
+#adminlogin{
+	background-color:#8b2257;
+	height:410px;
+}
+
+#adminform{
+	color:white;
+	margin-top:5%;
+	float:left;
+	margin-left: 20%;
+}
+
+#passtext{
+	margin-top: 0px;
+}
+
+#loginimage{
+	margin-top: 8%;
+	margin-left: 20%;
+	float:left;
+}
+
+#adminform input[type="text"]{
+	padding:4px;
+	height:25px;
+}
+
+#adminform input[type="password"]{
+	padding:4px;
+	height:25px;
+}
+
+#adminform button,#visitbutton{
+	margin-top:10px;
+	padding:4px;
+	height:35px;
+	width:183px;
+	background-color: #6699cc;
+	border:0;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+/*===========Admin Media Query========*/
+
+@media (max-width:865px){
+
+	#adminlogin{
+		height: 600px;
+
+	}
+}
+/*===============Visit page============*/
+
+#visitsection{
+	text-align: center;
+	color: white;
+	background-color:#8b2257;
+	height:430px;
+}
+
+#visitsection h1{
+	margin-top: 0;
+	padding-top:2%;
+}
+
+#visitsection h3 {
+	margin-bottom: 3px;
+}
+
+/* =============Admin Page==============*/
+#welcomeadmin {
+	
+}

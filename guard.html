@@ -1,0 +1,44 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guard Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+  				<h1><span class="highlight">Prison</span> Cell Web Application</h1>
+  			</div>
+  			<nav>
+  				<ul>
+  					<li><a href="index.html">Home</a></li>
+  					<li><a href="admin.html">Admin</a></li>
+  					<li class="current"><a href="guard.html">Guard</a></li>
+  				</ul>	
+  			</nav>
+		</div>
+	</header>
+
+  <section id="adminlogin">
+    <div class="container">
+      <img src="media/login.png" id="loginimage">
+      <form id="adminform" method="POST" action="guard_login.php">
+        <h2>Guard Name:</h2>
+        <input type="text" name="guardname"><br><br>
+        <h2 id="passtext">Guard Password:</h2>
+        <input type="password" name="guardpassword"><br><br>
+        <button type="submit" id="loginbutton">Log In</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>In. Design, Copyright &copy; 2018</p>
+  </footer>
+</body>
+</html>

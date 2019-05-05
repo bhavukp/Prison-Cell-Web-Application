@@ -1,0 +1,52 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book a visit</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+  				<h1><span class="highlight">Prison</span> Cell Web Application</h1>
+  			</div>
+  			<nav>
+  				<ul>
+  					<li><a href="admin_page.html">Welcome Admin</a></li>
+  					<li class="current"><a href="visit.html">Visit</a></li>
+  					<li><a href="logout.php">Logout</a></li>
+  				</ul>	
+  			</nav>
+		</div>
+	</header>
+
+<section id="visitsection">
+	<div class="container">
+		<h1> Book A Visit For A Prisoner</h1>
+		<form id="visitform" method="POST" action="visit_form.php">
+			<h3>Visitor's Name :</h3>
+			<input type="text" name="visitorname">
+			<h3>Name of the Prisoner to meet :</h3>
+			<input type="text" name="prisonername">
+			<h3> Date to Schedule :</h3>
+			<input type="date" name="date">
+			<h3>Time Duration</h3>
+			<input type="Time" name="time">
+			<h3>Contact Number :</h3>
+			<input type="Number" name="contactnumber"><br>
+			<button type="submit" id="visitbutton">Submit</button>
+		</form>
+	</div>
+</section>
+  
+  <footer>
+  	<p> NOTE: During the visit please carry a valid id proof to prove your relation with the prisoner.</p>
+    <p>In. Design, Copyright &copy; 2018</p>
+  </footer>
+</body>
+</html>
